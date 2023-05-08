@@ -5,12 +5,12 @@
 import math
 
 #details of the cube
-cube = {"surface area": 0, "volume": 0, "side length": 0}
+cube = {"surface area": None, "volume": None, "side length": None}
 
 
 #input side length
 def inputfind():
-    cube["side length"] = input("Enter the side length of the cube: ")
+    cube["side length"] = float(input("Enter the side length of the cube: "))
     
 #find the volume and surface area
 def find():
@@ -19,8 +19,9 @@ def find():
 
 #run the program
 def run():
-    input()
+    inputfind()
     find()
     print("The volume of the cube is", cube["volume"], "and the surface area is", cube["surface area"])
 
 run()
+
