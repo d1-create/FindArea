@@ -9,7 +9,7 @@ cube = {"surface area": 0, "volume": 0, "side length": 0}
 
 
 #input side length
-def input():
+def inputfind():
     cube["side length"] = input("Enter the side length of the cube: ")
     
 #find the volume and surface area
